@@ -255,7 +255,7 @@ which(duplicated(annotations_ahb$symbol)) %>% length()
 Let's identify the non-duplicated genes and only keep the ones that are not duplicated:
 ```r
 # Determine the indices for the non-duplicated genes
-non_duplicates_idx <- which(duplicated(annotations_ahb$symbol) == FALSE)
+non_duplicates_idx <- which(duplicated(annotations_ahb$gene_id) == FALSE)
 
 # How many rows does annotations_ahb have?
 annotations_ahb %>% nrow()
